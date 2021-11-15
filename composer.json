@@ -1,0 +1,11 @@
+{
+    "name": "kavalar/password",
+    "description": "Password Generator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Kavalar\\Password\\": "src/"
+        }
+    },
+    "require": {}
+}
