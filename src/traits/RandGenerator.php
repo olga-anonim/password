@@ -4,13 +4,8 @@ namespace Kavalar\Password\traits;
 
 trait RandGenerator
 {
-    use SetLeght;
-    use SetComplexity;
-
-
-    public function passGenerate($length, $complexity)
+      public function passGenerate($length, $complexity)
     {
-
         $arr = ['a', 'b', 'c', 'd', 'e', 'f',
             'g', 'h', 'i', 'j', 'k', 'l',
             'm', 'n', 'o', 'p', 'r', 's',

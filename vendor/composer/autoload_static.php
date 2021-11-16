@@ -22,7 +22,10 @@ class ComposerStaticInit9dd2da43ec5320c4582fe73b8f294964
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Kavalar\\Password\\CheckBox' => __DIR__ . '/../..' . '/src/CheckBox.php',
         'Kavalar\\Password\\PasswordGenerator' => __DIR__ . '/../..' . '/src/PasswordGenerator.php',
+        'Kavalar\\Password\\Submit' => __DIR__ . '/../..' . '/src/Submit.php',
+        'Kavalar\\Password\\traits\\RandGenerator' => __DIR__ . '/../..' . '/src/traits/RandGenerator.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

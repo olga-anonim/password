@@ -4,5 +4,5 @@ namespace kavalar\password\interfaces;
 
 interface PassField
 {
-public function  CreatePass($pass, $number);
+public function  create($length, $complexity);
 }

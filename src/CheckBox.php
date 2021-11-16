@@ -3,18 +3,17 @@
 namespace Kavalar\Password;
 
 use kavalar\password\interfaces\CheckBoxInterface;
-use kavalar\password\traits\SetCmplexity;
-use kavalar\password\traits\IsCheaking;
+use Kavalar\Password\traits\SetComplexity;
 
 
 class CheckBox implements CheckBoxInterface
 {
     public function createCheckBox()
     {
-        $box = '';
-        $box .= "<input type='checkbox' name='check' value='' />";
-
-
+        $box = "<input type='checkbox' name='check[]' value='1' />";
+        $box .= "<input type='checkbox' name='check[]' value='2' />";
+        $box .= "<input type='checkbox' name='check[]' value='3' />";
+        $box .= "<input type='checkbox' name='check[]' value='4' />";
 
         /*        $instruction = ['add capital letters', 'add numbers', 'add symbol'];
 

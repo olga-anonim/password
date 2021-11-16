@@ -2,21 +2,18 @@
 
 namespace Kavalar\Password;
 
+use Couchbase\PasswordAuthenticator;
+use kavalar\password\interfaces\PassField;
 use Kavalar\Password\traits\RandGenerator;
-use kavalar\password\traits\SetCmplexity;
-use kavalar\password\traits\SetLeght;
+use Kavalar\Password\traits\SetComplexity;
+use Kavalar\Password\traits\SetLeght;
 
-class PasswordGenerator
+class PasswordGenerator implements PassField
 {
     use RandGenerator;
 
     public function create($length, $complexity)
     {
-//        echo "'Complexity 0 : use all', 'Complexity 1 : just letter'
-//.<br>. 'Complexity 2 : add capital letters' .<br>. 'Complexity 3: add symbols' .<br>. 'Complexity 4: add numbers'
-//.<br>. 'Complexity 123 :  add capital letters and symbols' .<br>. 'Complexity 124 :  add capital letters and numbers'
-//.<br>. 'Complexity 134 : add symbols and numbers'";
-
         $attrs = $this->passGenerate($length, $complexity);
         return $attrs;
     }

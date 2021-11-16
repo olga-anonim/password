@@ -7,5 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Kavalar\\Password\\CheckBox' => $baseDir . '/src/CheckBox.php',
     'Kavalar\\Password\\PasswordGenerator' => $baseDir . '/src/PasswordGenerator.php',
+    'Kavalar\\Password\\Submit' => $baseDir . '/src/Submit.php',
+    'Kavalar\\Password\\traits\\RandGenerator' => $baseDir . '/src/traits/RandGenerator.php',
 );
