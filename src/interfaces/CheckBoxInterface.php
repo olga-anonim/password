@@ -1,6 +1,6 @@
 <?php
 
-namespace kavalar\password\interfaces;
+namespace Kavalar\Password\interfaces;
 
 interface CheckBoxInterface
 {

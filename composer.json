@@ -7,5 +7,7 @@
             "Kavalar\\Password\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "cheprasov/php-cli-args": "^3.0"
+    }
 }
